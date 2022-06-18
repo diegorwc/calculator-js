@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
 .App-logo {
@@ -36,4 +36,32 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.calculadora {
+  border: 1px solid black;
+  width: 50%;
+  margin: 5% auto;  
+}
+
+.col-2 {
+  border: 1px dashed magenta;
+}
+
+.btn {
+  background-color: lightgray;
+}
+
+#display {
+  border: 1px dotted;
+  height: 3em;
+}
+
+.expr {
+  border: 1px solid;
+  height: 2em;
+}
+
+.row {
+  margin: auto;  
 }

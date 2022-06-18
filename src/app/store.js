@@ -1,8 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { applyMiddleware, configureStore } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
+import calculatorReducer from '../features/calculator/calculatorSlice'
+
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    calculator: calculatorReducer,
   },
+  middleware: [thunk]
 });
