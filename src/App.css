@@ -44,12 +44,13 @@
   margin: 5% auto;  
 }
 
-.col-2 {
-  border: 1px dashed magenta;
+.col-3 {
+  border: 1px solid gray;
+  background-color: lightgray;
 }
 
 .btn {
-  background-color: lightgray;
+  
 }
 
 #display {

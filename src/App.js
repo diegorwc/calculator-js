@@ -15,37 +15,37 @@ function App() {
       <div className="calculadora">
         <div>{operation}</div>
         <div className="row">
-          <div className="col-8 expr">{expression == '' ? '0' : expression}</div>
+          <div className="col-12 expr">{expression == '' ? '0' : expression}</div>
         </div>
         <div className="row">
-          <div id="display" className="col-8">{value == '' ? '0' : value}</div>
+          <div id="display" className="col-12">{value == '' ? '0' : value}</div>
         </div>
         <div className="row">
-          <div className="btn col-2" id="clear" onClick={() => dispatch(clear())}>C</div>
+          <div className="btn btn-warning col-12" id="clear" onClick={() => dispatch(clear())}>C</div>
         </div>
         <div className="row">
-          <div className="btn col-2" id="zero" onClick={() => dispatch(input(0))}>0</div>
-          <div className="btn col-2" id="decimal" onClick={() => dispatch(input("."))}>.</div>
-          <div className="btn col-2" id="equals" onClick={() => dispatch(equal())}>=</div>          
-          <div className="btn col-2" id="add" onClick={() => dispatch(calc("+"))}>+</div>                        
+          <div className="btn col-3" id="zero" onClick={() => dispatch(input(0))}>0</div>
+          <div className="btn col-3" id="decimal" onClick={() => dispatch(input("."))}>.</div>
+          <div className="btn col-3" id="equals" onClick={() => dispatch(equal())}>=</div>          
+          <div className="btn col-3" id="add" onClick={() => dispatch(calc("+"))}>+</div>                        
         </div>
         <div className="row">          
-          <div className="btn col-2" id="one" onClick={() => dispatch(input(1))}>1</div>
-          <div className="btn col-2" id="two"onClick={() => dispatch(input(2))}>2</div>
-          <div className="btn col-2" id="three" onClick={() => dispatch(input(3))}>3</div>
-          <div className="btn col-2" id="divide" onClick={() => dispatch(calc("/"))}>/</div>
+          <div className="btn col-3" id="one" onClick={() => dispatch(input(1))}>1</div>
+          <div className="btn col-3" id="two"onClick={() => dispatch(input(2))}>2</div>
+          <div className="btn col-3" id="three" onClick={() => dispatch(input(3))}>3</div>
+          <div className="btn col-3" id="divide" onClick={() => dispatch(calc("/"))}>/</div>
         </div>
         <div className="row">          
-          <div className="btn col-2" id="four" onClick={() => dispatch(input(4))}>4</div>
-          <div className="btn col-2" id="five" onClick={() => dispatch(input(5))}>5</div>
-          <div className="btn col-2" id="six" onClick={() => dispatch(input(6))}>6</div>
-          <div className="btn col-2" id="multiply" onClick={() => dispatch(calc("*"))}>*</div>
+          <div className="btn col-3" id="four" onClick={() => dispatch(input(4))}>4</div>
+          <div className="btn col-3" id="five" onClick={() => dispatch(input(5))}>5</div>
+          <div className="btn col-3" id="six" onClick={() => dispatch(input(6))}>6</div>
+          <div className="btn col-3" id="multiply" onClick={() => dispatch(calc("*"))}>*</div>
         </div>
         <div className="row">          
-          <div className="btn col-2" id="seven" onClick={() => dispatch(input(7))}>7</div>
-          <div className="btn col-2" id="eight" onClick={() => dispatch(input(8))}>8</div>
-          <div className="btn col-2" id="nine" onClick={() => dispatch(input(9))}>9</div>
-          <div className="btn col-2" id="subtract" onClick={() => dispatch(calc("-"))}>-</div>
+          <div className="btn col-3" id="seven" onClick={() => dispatch(input(7))}>7</div>
+          <div className="btn col-3" id="eight" onClick={() => dispatch(input(8))}>8</div>
+          <div className="btn col-3" id="nine" onClick={() => dispatch(input(9))}>9</div>
+          <div className="btn col-3" id="subtract" onClick={() => dispatch(calc("-"))}>-</div>
         </div>
       </div>
     </div>

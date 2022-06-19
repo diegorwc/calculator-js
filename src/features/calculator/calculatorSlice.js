@@ -16,7 +16,10 @@ export const calculatorSlice = createSlice({
                 console.log('é verdade')
                 return
             }
+            // if(typeof state.input_value == 'array') {
+            // console.log(typeof state.input_value)
             if(state.input_value.indexOf('.') != -1 && key.payload == '.') return
+            // }            
             state.input_value += String(key.payload)
         },
         clear: state => { 
